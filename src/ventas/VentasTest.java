@@ -11,5 +11,11 @@ public class VentasTest {
         orden1.agregarProducto(producto1);
         orden1.agregarProducto(producto2);
         orden1.mostrarOrden();
+        
+        Orden orden2 = new Orden();
+        orden2.agregarProducto(producto1);
+        orden2.agregarProducto(producto2);
+        orden1.mostrarOrden();
+        
     }
 }

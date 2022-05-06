@@ -36,11 +36,9 @@ public class Producto {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Producto{");
-        sb.append("idProducto=").append(idProducto);
-        sb.append(", nombre=").append(nombre);
-        sb.append(", precio=").append(precio);
-        sb.append('}');
+        sb.append(idProducto);
+        sb.append("  ").append(nombre);
+        sb.append("\t$").append(precio);
         return sb.toString();
     }
 

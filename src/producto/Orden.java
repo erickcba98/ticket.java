@@ -34,10 +34,14 @@ public class Orden {
 
     public void mostrarOrden() {
         System.out.println("ID Orden: " + this.idOrden);
-        double totalOrden = this.calcularTotal();
+
         System.out.println("Productos de la orden: ");
+        System.out.println("\nN° Producto \tPrecio\n");
         for (int i = 0; i < this.contadorProductos; i++) {
             System.out.println(this.productos[i]);
         }
+        double totalOrden = Math.round(this.calcularTotal() * 100.0) / 100.0;
+        System.out.println("\n\t TOTAL: $" + totalOrden);
+        System.out.println("-----------------------------------------");
     }
 }
